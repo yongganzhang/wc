@@ -21,6 +21,7 @@
 		</mvc:message-converters>
 	</mvc:annotation-driven>
 
+	<mvc:default-servlet-handler/>
 
 	<!--配置视图解析器 默认的视图解析器- -->
 	<bean id="defaultViewResolver"

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class UserController {
@@ -15,21 +16,24 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-
     /**
      * 跳转 登陆页面
+     *
      * @return
      */
     @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public String userLoginIndex () {
-        return  "login";
+    public String userLoginIndex() {
+        return "login";
     }
 
-    @RequestMapping ("userLogin")
-    @ResponseBody
-    public Result userLogin (String userName, String userPwd) {
+    @RequestMapping("/userLogin")
+    public ModelAndView userLogin(String userName, String userPwd) {
+
+        ModelAndView mv = new ModelAndView();
         Result result = userService.userLogin(userName, userPwd);
-        return  result;
+        mv.setViewName("forward:main");
+
+        return mv;
     }
 
 }

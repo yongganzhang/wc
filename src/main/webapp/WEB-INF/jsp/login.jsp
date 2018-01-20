@@ -33,7 +33,7 @@ body {
       <tr>
         <td height="95">
 	        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <form action="user" method="post">
+        <form action="userLogin" method="post">
 	          <tr>
 	            <td width="424" height="95" background="skin/images/login_06.gif">&nbsp;</td>
 	            <td width="183" background="skin/images/login_07.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
