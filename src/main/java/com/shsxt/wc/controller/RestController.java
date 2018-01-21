@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @org.springframework.web.bind.annotation.RestController
 public class RestController {
 
-    @Autowired
+/*    @Autowired
     private UserService userService;
 
     @GetMapping("/user/{id}")
@@ -40,6 +40,6 @@ public class RestController {
     @RequestMapping(value = "/user", method = RequestMethod.PUT)
     public Result updateUserById(User user) {
         return userService.updateUser(user);
-    }
+    }*/
 
 }

@@ -12,15 +12,18 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class UserController {
+/*
 
     @Autowired
     private UserService userService;
 
-    /**
+    */
+/**
      * 跳转 登陆页面
      *
      * @return
-     */
+     *//*
+
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String userLoginIndex() {
         return "login";
@@ -35,5 +38,6 @@ public class UserController {
 
         return mv;
     }
+*/
 
 }
